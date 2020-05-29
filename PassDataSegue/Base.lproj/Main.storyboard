@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PassDataSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL3-A1-lY0">
+                                <rect key="frame" x="150" y="712" width="114" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XS0-fu-Gxm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="myButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="KBX-t2-8RY"/>
+                                    <segue destination="AwO-iC-olL" kind="show" identifier="viewSegue" id="lIV-ec-Sb7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-zZ-f7w">
+                                <rect key="frame" x="20" y="344" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EZ9-vx-bHu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PL3-A1-lY0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="0HC-aB-Ut4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PL3-A1-lY0" secondAttribute="trailing" constant="150" id="3OD-oe-MEe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PL3-A1-lY0" secondAttribute="bottom" constant="100" id="9kg-FN-HBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g0J-zZ-f7w" secondAttribute="trailing" constant="20" id="9ml-MA-lFf"/>
+                            <constraint firstItem="g0J-zZ-f7w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NKT-Nf-gYT"/>
+                            <constraint firstItem="g0J-zZ-f7w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="qUe-r3-ZV3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YSe-9o-6iN"/>
+                    <connections>
+                        <outlet property="myButton" destination="PL3-A1-lY0" id="lTz-eL-IDJ"/>
+                        <outlet property="myTextField" destination="g0J-zZ-f7w" id="G6g-pY-MjB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="95"/>
+        </scene>
+        <!--View Controller Segue-->
+        <scene sceneID="gL9-XF-rVU">
+            <objects>
+                <viewController id="AwO-iC-olL" customClass="ViewControllerSegue" customModule="PassDataSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EQ0-tp-mOE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QdB-N3-mOQ">
+                                <rect key="frame" x="20" y="300" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vLw-79-Ybh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FM-hg-Fkt">
+                                <rect key="frame" x="150" y="658" width="114" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nXt-h6-uIe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dissmiss" destination="AwO-iC-olL" eventType="touchUpInside" id="Nog-n1-Uc1"/>
+                                    <action selector="myUnWindActionWithUnWindAction:" destination="AwO-iC-olL" eventType="touchUpInside" id="CvF-A6-SHD"/>
+                                    <segue destination="90q-27-h4A" kind="unwind" identifier="IDUnWindSegue" unwindAction="myUnWindActionWithUnWindAction:" id="cU7-23-jL9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsK-nW-Eo6">
+                                <rect key="frame" x="150" y="100" width="114" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aH3-Cr-o7i"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="90q-27-h4A" kind="unwind" identifier="viewSave" unwindAction="unwindToSegue:" id="hxs-CK-dIx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QdB-N3-mOQ" firstAttribute="leading" secondItem="ppa-wR-zrH" secondAttribute="leading" constant="20" id="43H-4c-eKw"/>
+                            <constraint firstItem="ppa-wR-zrH" firstAttribute="bottom" secondItem="8FM-hg-Fkt" secondAttribute="bottom" constant="100" id="5f8-ar-TFk"/>
+                            <constraint firstItem="QdB-N3-mOQ" firstAttribute="top" secondItem="ppa-wR-zrH" secondAttribute="top" constant="300" id="INU-4v-sRA"/>
+                            <constraint firstItem="ppa-wR-zrH" firstAttribute="trailing" secondItem="8FM-hg-Fkt" secondAttribute="trailing" constant="150" id="O8k-Yx-X6n"/>
+                            <constraint firstItem="8FM-hg-Fkt" firstAttribute="leading" secondItem="ppa-wR-zrH" secondAttribute="leading" constant="150" id="RYb-1f-J1n"/>
+                            <constraint firstItem="ppa-wR-zrH" firstAttribute="trailing" secondItem="WsK-nW-Eo6" secondAttribute="trailing" constant="150" id="TWm-Hu-ToM"/>
+                            <constraint firstItem="WsK-nW-Eo6" firstAttribute="leading" secondItem="ppa-wR-zrH" secondAttribute="leading" constant="150" id="hdw-O2-14d"/>
+                            <constraint firstItem="WsK-nW-Eo6" firstAttribute="top" secondItem="ppa-wR-zrH" secondAttribute="top" constant="100" id="qlt-SZ-wOe"/>
+                            <constraint firstItem="ppa-wR-zrH" firstAttribute="trailing" secondItem="QdB-N3-mOQ" secondAttribute="trailing" constant="20" id="zzp-E7-Fcs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ppa-wR-zrH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dnt-st-v6A"/>
+                    <connections>
+                        <outlet property="myButtonSegue1" destination="8FM-hg-Fkt" id="eMU-Wa-gx1"/>
+                        <outlet property="myTextField1" destination="QdB-N3-mOQ" id="wZY-DN-YaA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fv8-Sp-8wj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="90q-27-h4A" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="94"/>
+        </scene>
+        <!--View Controller Segue2-->
+        <scene sceneID="5Ra-Jv-d7k">
+            <objects>
+                <viewController id="aDt-sW-ALt" customClass="ViewControllerSegue2" customModule="PassDataSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Khr-J2-90P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEI-8O-aeq">
+                                <rect key="frame" x="150" y="712" width="114" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qxH-vA-fcC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dissmissSegue2" destination="aDt-sW-ALt" eventType="touchUpInside" id="zqU-9C-1dN"/>
+                                    <action selector="unWindToVC1WithSegue:" destination="aDt-sW-ALt" eventType="touchUpInside" id="D8h-tJ-YNJ"/>
+                                    <segue destination="KdV-T5-NSr" kind="unwind" identifier="unWindToVC1" unwindAction="unWindToVC1WithSegue:" id="hqd-T8-Dwy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xk7-ph-znu">
+                                <rect key="frame" x="20" y="344" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VMd-GL-rZo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xk7-ph-znu" firstAttribute="leading" secondItem="jfN-cq-ZbT" secondAttribute="leading" constant="20" id="5RM-GX-kWz"/>
+                            <constraint firstItem="jfN-cq-ZbT" firstAttribute="trailing" secondItem="sEI-8O-aeq" secondAttribute="trailing" constant="150" id="DV7-OG-Pe1"/>
+                            <constraint firstItem="sEI-8O-aeq" firstAttribute="leading" secondItem="jfN-cq-ZbT" secondAttribute="leading" constant="150" id="H8R-yV-q3f"/>
+                            <constraint firstItem="jfN-cq-ZbT" firstAttribute="bottom" secondItem="sEI-8O-aeq" secondAttribute="bottom" constant="100" id="SiB-H1-tCV"/>
+                            <constraint firstItem="Xk7-ph-znu" firstAttribute="top" secondItem="jfN-cq-ZbT" secondAttribute="top" constant="300" id="Wt4-vr-LXe"/>
+                            <constraint firstItem="jfN-cq-ZbT" firstAttribute="trailing" secondItem="Xk7-ph-znu" secondAttribute="trailing" constant="20" id="eW1-kA-hQg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jfN-cq-ZbT"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButtonSegue2" destination="sEI-8O-aeq" id="W9y-30-irU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvQ-4A-46d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KdV-T5-NSr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1928" y="94"/>
+        </scene>
+        <!--View Controller SegueA-->
+        <scene sceneID="Zys-aM-C5h">
+            <objects>
+                <viewController id="t5U-cY-5Yb" customClass="ViewControllerSegueA" customModule="PassDataSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vdi-dl-pCc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKQ-m1-PMg">
+                                <rect key="frame" x="100" y="752" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vyu-UH-qs9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Next To SegueA"/>
+                                <connections>
+                                    <segue destination="dJn-uj-mzb" kind="show" id="RdO-9s-Jdh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-yo-trb">
+                                <rect key="frame" x="112" y="269" width="190" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="bln-0J-LM9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nn2-EP-ZZ3" firstAttribute="trailing" secondItem="zKQ-m1-PMg" secondAttribute="trailing" constant="100" id="BOp-Fp-h5g"/>
+                            <constraint firstItem="JiK-yo-trb" firstAttribute="leading" secondItem="nn2-EP-ZZ3" secondAttribute="leading" constant="112" id="Wd8-kv-OIb"/>
+                            <constraint firstItem="nn2-EP-ZZ3" firstAttribute="bottom" secondItem="zKQ-m1-PMg" secondAttribute="bottom" constant="60" id="ari-Ow-VeL"/>
+                            <constraint firstItem="zKQ-m1-PMg" firstAttribute="leading" secondItem="nn2-EP-ZZ3" secondAttribute="leading" constant="100" id="gVa-Ym-Cad"/>
+                            <constraint firstItem="JiK-yo-trb" firstAttribute="top" secondItem="nn2-EP-ZZ3" secondAttribute="top" constant="225" id="kiY-3s-2bG"/>
+                            <constraint firstItem="nn2-EP-ZZ3" firstAttribute="trailing" secondItem="JiK-yo-trb" secondAttribute="trailing" constant="112" id="l9e-Br-pch"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nn2-EP-ZZ3"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButtonSegueA" destination="zKQ-m1-PMg" id="tYb-Vf-wd9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJU-CD-Gfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="822"/>
+        </scene>
+        <!--View Controller SegueB-->
+        <scene sceneID="rHx-ar-qn6">
+            <objects>
+                <viewController id="dJn-uj-mzb" customClass="ViewControllerSegueB" customModule="PassDataSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R1L-qr-Y92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QML-ys-6OS">
+                                <rect key="frame" x="100" y="698" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rQ7-li-reS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Back to SegueA"/>
+                                <connections>
+                                    <action selector="dissmissSegueB" destination="dJn-uj-mzb" eventType="touchUpInside" id="f61-PM-MCK"/>
+                                    <action selector="unWindSegueBWithSegue:" destination="dJn-uj-mzb" eventType="touchUpInside" id="8IB-hQ-5dx"/>
+                                    <segue destination="mNw-3B-ZsO" kind="unwind" identifier="IDUnWindB" unwindAction="unWindSegueBWithSegue:" id="LzS-8r-fxm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofg-mw-sd3">
+                                <rect key="frame" x="116" y="225" width="182" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="HSb-ES-kcK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ofg-mw-sd3" firstAttribute="leading" secondItem="ikn-12-taP" secondAttribute="leading" constant="116" id="Cf1-og-5bA"/>
+                            <constraint firstItem="QML-ys-6OS" firstAttribute="leading" secondItem="ikn-12-taP" secondAttribute="leading" constant="100" id="GgI-aY-Pxi"/>
+                            <constraint firstItem="ikn-12-taP" firstAttribute="bottom" secondItem="QML-ys-6OS" secondAttribute="bottom" constant="60" id="MZz-qT-RsK"/>
+                            <constraint firstItem="ikn-12-taP" firstAttribute="trailing" secondItem="QML-ys-6OS" secondAttribute="trailing" constant="100" id="Qu7-47-96S"/>
+                            <constraint firstItem="ikn-12-taP" firstAttribute="trailing" secondItem="Ofg-mw-sd3" secondAttribute="trailing" constant="116" id="nYP-kn-ufP"/>
+                            <constraint firstItem="Ofg-mw-sd3" firstAttribute="top" secondItem="ikn-12-taP" secondAttribute="top" constant="225" id="sWu-k0-FH0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ikn-12-taP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7iy-wK-34M"/>
+                    <connections>
+                        <outlet property="myButtonSegueB" destination="QML-ys-6OS" id="sF8-kQ-u6n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWp-a0-db4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="mNw-3B-ZsO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1928" y="822"/>
+        </scene>
+    </scenes>
+</document>
